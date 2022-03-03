@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<font face="times new roman">
+<textarea cols=82 rows=16>
+#include <cstdlib>
+#include <iostream>
+
+
+
+using namespace std;
+
+
+
+int main(int argc, char *argv[])
+{
+// Napisz program, który po wczytaniu dwóch liczb dol_trzy_litery i gora_trzy_litery obliczy sumę liczb między tymi liczbami.
+system("chcp 1250");
+int dol_bur;
+cout<<"podaj dolną granicę obliczania sumy=";
+cin>>dol_bur;
+int gora_bur;
+cout<<"podaj górną granicę obliczania sumy=";
+cin>>gora_bur;
+int suma_bur=1;
+for (int i=1;i<=gora_bur;i++)
+for (int i=1;i<=dol_bur;i++)
+{
+suma_bur=suma_bur+i;
+}
+cout<<"suma="<<suma_bur<<endl;
+system("PAUSE");
+return EXIT_SUCCESS;
+}
+</textarea>
+</body>
+</html>
